@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'polls.apps.PollsConfig',
     'dogs_shelter.apps.DogsShelterConfig',
     'django.contrib.admin',
     'django.contrib.auth',
