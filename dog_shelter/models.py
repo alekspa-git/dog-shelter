@@ -9,7 +9,6 @@ class Breed(models.Model):
 
 
 class Curator(models.Model):
-
     name = models.CharField(max_length=100, default='')
     surname = models.CharField(max_length=100, default='')
 
@@ -21,7 +20,6 @@ class Curator(models.Model):
 
 
 class Dog(models.Model):
-
     name = models.CharField(max_length=100, default='')
     breed = models.ForeignKey(Breed, null=True, on_delete=models.SET_NULL)
     birth_date = models.DateField()
@@ -33,7 +31,6 @@ class Dog(models.Model):
 
 
 class Payment(models.Model):
-
     date = models.DateTimeField()
     number = models.DecimalField(max_digits=9, decimal_places=0)
     amount = models.DecimalField(max_digits=15, decimal_places=2)
